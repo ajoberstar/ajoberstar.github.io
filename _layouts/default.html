@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+
+    <link rel="alternate" type="application/atom+xml" title="Blog" href="/blog/feed.xml">
+
+    <!-- Materialize - Google Icon Font -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize - Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" media="screen,projection">
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-wrapper">
+        <a href="#" class="brand-logo">Andrew Oberstar</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      {{ content }}
+    </main>
+    <footer class="page-footer">
+      <section>
+        Footer
+      </section>
+      <section class="footer-copyright">
+        © 2009-2016 Copyright Andrew Oberstar
+      </section>
+    </footer>
+
+    <!-- Materialize - JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  </body>
+</html>
