@@ -22,24 +22,18 @@
                     <span class="mdl-layout__title">Andrew Oberstar</span>
                     <div class="mdl-layout-spacer"></div>
                     <nav class="mdl-navigation mdl-layout--large-screen-only">
-                        <a class="mdl-navigation__link" href="/">Home</a>
-                        <a class="mdl-navigation__link" href="/blog">Blog</a>
-                        <a class="mdl-navigation__link" href="/blog/feed.xml">Subscribe</a>
-                        <a class="mdl-navigation__link" href="https://github.com/ajoberstar">GitHub</a>
-                        <a class="mdl-navigation__link" href="https://twitter.com/ajoberstar">Twitter</a>
-                        <a class="mdl-navigation__link" href="https://www.linkedin.com/in/andrewoberstar">LinkedIn</a>
+                        {% for link in site.data.links %}
+                            <a class="mdl-navigation__link" href="{{ link.url }}">{{ link.text }}</a>
+                        {% endfor %}
                     </nav>
                 </div>
             </header>
             <div class="mdl-layout__drawer">
                 <span class="mdl-layout__title">Andrew Oberstar</span>
                 <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="/">Home</a>
-                    <a class="mdl-navigation__link" href="/blog">Blog</a>
-                    <a class="mdl-navigation__link" href="/blog/feed.xml">Subscribe</a>
-                    <a class="mdl-navigation__link" href="https://github.com/ajoberstar">GitHub</a>
-                    <a class="mdl-navigation__link" href="https://twitter.com/ajoberstar">Twitter</a>
-                    <a class="mdl-navigation__link" href="https://www.linkedin.com/in/andrewoberstar">LinkedIn</a>
+                    {% for link in site.data.links %}
+                        <a class="mdl-navigation__link" href="{{ link.url }}">{{ link.text }}</a>
+                    {% endfor %}
                 </nav>
             </div>
             <main class="mdl-layout__content">

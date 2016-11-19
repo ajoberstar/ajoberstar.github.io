@@ -1,0 +1,12 @@
+- text: Home
+  url: /
+- text: Blog
+  url: /blog
+- text: Subscribe
+  url: /blog/feed.xml
+- text: GitHub
+  url: https://github.com/ajoberstar
+- text: Twitter
+  url: https://twitter.com/ajoberstar
+- text: LinkedIn
+  url: https://www.linkedin.com/in/andrewoberstar
