@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
     <header class="mdl-card__title">
-        <h1 class="mdl-card__title-text"><button class="mdl-button mdl-js-button mdl-button--icon"><a href="{{ page.url }}"><i class="material-icons">link</i></a></button>{{ page.title }}</h1>
+        <h1 class="mdl-card__title-text"><a class="mdl-button mdl-js-button mdl-button--primary mdl-button--icon" href="{{ page.url }}"><i class="material-icons">link</i></a>{{ page.title }}</h1>
         <h2 class="mdl-card__subtitle-text">{{ page.date | date: "%B %d, %Y" }}</h2>
     </header>
     <section class="mdl-card__supporting-text">
