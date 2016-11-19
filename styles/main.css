@@ -1,8 +1,10 @@
+/* BEGIN general sizing */
 main {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
 }
+/* END general sizing */
 
 /* BEGIN fix for subtitle alignment */
 /* see https://github.com/google/material-design-lite/issues/1002 */
