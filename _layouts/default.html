@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{ page.title }}</title>
+    <head>
+        <title>{{ page.title }}</title>
 
-    <link rel="alternate" type="application/atom+xml" title="Blog" href="/blog/feed.xml">
+        <link rel="alternate" type="application/atom+xml" title="Blog" href="/blog/feed.xml">
 
-    <!-- Materialize - Google Icon Font -->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Materialize - Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" media="screen,projection">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/syntax.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-blue.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/syntax.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
-  <body class="blue-grey lighten-5">
-    <header>
-      <nav class="nav-wrapper blue-grey">
-        <a href="#" class="brand-logo">Andrew Oberstar</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="/">Home</a></li>
-          <li><a href="/blog">Blog</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="container">
-      {{ content }}
-    </main>
-    <footer class="page-footer blue-grey">
-      <section>
-        Footer
-      </section>
-      <section class="footer-copyright">
-        © 2009-2016 Copyright Andrew Oberstar
-      </section>
-    </footer>
+        <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 
-    <!-- Materialize - JS -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-  </body>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout-icon"></div>
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout__title">Andrew Oberstar</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <nav class="mdl-navigation">
+                        <a class="mdl-navigation__link" href="/">Home</a>
+                        <a class="mdl-navigation__link" href="/blog">Blog</a>
+                        <a class="mdl-navigation__link" href="/blog/feed.xml">Subscribe</a>
+                        <a class="mdl-navigation__link" href="https://github.com/ajoberstar">GitHub</a>
+                        <a class="mdl-navigation__link" href="https://twitter.com/ajoberstar">Twitter</a>
+                        <a class="mdl-navigation__link" href="https://www.linkedin.com/in/andrewoberstar">LinkedIn</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout__title">Andrew Oberstar</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="/">Home</a>
+                    <a class="mdl-navigation__link" href="/blog">Blog</a>
+                    <a class="mdl-navigation__link" href="/blog/feed.xml">Subscribe</a>
+                    <a class="mdl-navigation__link" href="https://github.com/ajoberstar">GitHub</a>
+                    <a class="mdl-navigation__link" href="https://twitter.com/ajoberstar">Twitter</a>
+                    <a class="mdl-navigation__link" href="https://www.linkedin.com/in/andrewoberstar">LinkedIn</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                {{ content }}
+            </main>
+        </div>
+    </body>
 </html>
