@@ -3,7 +3,7 @@ layout: default
 ---
 <section class="posts mdl-grid">
     {% for post in site.posts %}
-    <article class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+    <article class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
         <header class="mdl-card__title">
             <h1 class="mdl-card__title-text"><button class="mdl-button mdl-js-button mdl-button--icon"><a href="{{ post.url }}"><i class="material-icons">link</i></a></button>{{ post.title }}</h1>
             <h2 class="mdl-card__subtitle-text">{{ post.date | date: "%B %d, %Y" }}</h2>
