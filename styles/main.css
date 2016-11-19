@@ -6,6 +6,16 @@ main {
 }
 /* END general sizing */
 
+/* BEGIN item nav layout */
+.item-nav {
+    display: flex;
+    justify-content: center;
+}
+.item-nav .mdl-button {
+    margin: 5px;
+}
+/* END item nav layout */
+
 /* BEGIN fix for subtitle alignment */
 /* see https://github.com/google/material-design-lite/issues/1002 */
 .mdl-card__title {
