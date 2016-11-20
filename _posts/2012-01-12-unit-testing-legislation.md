@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Unit Testing Legislation
+date: 2012-01-12 01:00:00
 category: political
 ---
 Just think how cool it would be if you could run unit tests on legislation...
