@@ -1,23 +1,21 @@
 ---
 layout: default
 ---
-<section class="posts mdl-grid">
-    {% for post in site.posts %}
-    <article class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-        <header class="mdl-card__title">
-            <h1 class="mdl-card__title-text"><a class="mdl-button mdl-js-button mdl-button--primary mdl-button--icon" href="{{ post.url }}"><i class="material-icons">link</i></a>{{ post.title }}</h1>
-            <h2 class="mdl-card__subtitle-text">{{ post.date | date: "%B %d, %Y" }}</h2>
-        </header>
-        <section class="mdl-card__supporting-text">
-            {{ post.excerpt }}
+{% for post in site.posts %}
+<article class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+    <header class="mdl-card__title">
+        <h1 class="mdl-card__title-text"><a class="mdl-button mdl-js-button mdl-button--primary mdl-button--icon" href="{{ post.url }}"><i class="material-icons">link</i></a>{{ post.title }}</h1>
+        <h2 class="mdl-card__subtitle-text">{{ post.date | date: "%B %d, %Y" }}</h2>
+    </header>
+    <section class="mdl-card__supporting-text">
+        {{ post.excerpt }}
+    </section>
+    <footer class="mdl-card__actions mdl-card--border">
+            <span class="mdl-chip"><span class="mdl-chip__text">{{ post.category }}</span></span>
+            {% for tag in post.tags %}
+                <span class="mdl-chip"><span class="mdl-chip__text">{{ tag }}</span></span>
+            {% endfor %}
         </section>
-        <footer class="mdl-card__actions mdl-card--border">
-                <span class="mdl-chip"><span class="mdl-chip__text">{{ post.category }}</span></span>
-                {% for tag in post.tags %}
-                    <span class="mdl-chip"><span class="mdl-chip__text">{{ tag }}</span></span>
-                {% endfor %}
-            </section>
-        </footer>
-    </article>
-    {% endfor %}
-</section>
+    </footer>
+</article>
+{% endfor %}
