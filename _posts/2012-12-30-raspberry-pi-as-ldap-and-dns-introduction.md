@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Raspberry Pi as LDAP and DNS - Introduction
+date: 2012-12-30 00:00:00
 category: technical
 tags:
     - raspberry pi

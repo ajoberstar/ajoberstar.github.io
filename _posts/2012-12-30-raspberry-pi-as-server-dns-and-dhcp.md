@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Raspberry Pi as Server - DNS and DHCP
+date: 2012-12-30 01:00:00
 category: technical
 tags:
     - raspberry pi

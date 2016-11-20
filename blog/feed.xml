@@ -23,13 +23,13 @@
     {% endfor %}
     {% assign categories = categories | split:'|' | sort %}
     {% for category in categories %}
-        <category term ="{{ category }}" />
+        <category term="{{ category }}" />
     {% endfor %}
     {% for post in site.posts %}
         <entry>
             <id>{{ site.url }}{{ post.id }}</id>
             <title>{{ post.title | xml_escape }}</title>
-            <category>{{ post.category }}</category>
+            <category term="{{ post.category }}"/>
             <updated>{{ post.date | date_to_xmlschema }}</updated>
             {% if post.external_url %}
                 <link rel="alternate" href="{{ post.external_url }}"/>
