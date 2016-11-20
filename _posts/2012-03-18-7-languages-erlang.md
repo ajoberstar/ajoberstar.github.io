@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "7 Languages: Erlang"
+date: 2012-03-18 00:00:00
 category: technical
 tags:
     - erlang

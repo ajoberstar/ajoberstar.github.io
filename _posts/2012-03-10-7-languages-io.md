@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "7 Languages: Io"
+date: 2012-03-10 00:00:00
 category: technical
 tags:
     - io

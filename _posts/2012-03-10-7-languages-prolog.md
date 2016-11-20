@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "7 Languages: Prolog"
+date: 2012-03-10 01:00:00
 category: technical
 tags:
     - prolog
