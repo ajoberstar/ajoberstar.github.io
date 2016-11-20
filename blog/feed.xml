@@ -2,22 +2,31 @@
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>Andrew Oberstar</title>
-	<link href="{{ site.url }}/blog/feed.xml" rel="self"/>
-	<link href="{{ site.url }}/blog"/>
-	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>{{ site.url }}/blog</id>
-	<author>
-		<name>Andrew Oberstar</name>
-		<email>ajoberstar@gmail.com</email>
-	</author>
-	{% for post in site.posts %}
-		<entry>
-			<title>{{ post.title | xml_escape }}</title>
-			<link href="{{ site.url }}{{ post.url }}"/>
-			<updated>{{ post.date | date_to_xmlschema }}</updated>
-			<id>{{ site.url }}{{ post.id }}</id>
-			<content type="html">{{ post.content | xml_escape }}</content>
-		</entry>
-	{% endfor %}
+    <id>{{ site.url }}/blog</id>
+    <title>Andrew Oberstar</title>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <author>
+        <name>Andrew Oberstar</name>
+        <email>ajoberstar@gmail.com</email>
+        <uri>http://www.andrewoberstar.com</uri>
+    </author>
+    <link rel="self" href="{{ site.url }}/blog/feed.xml" />
+    <link rel="alternate" href="{{ site.url }}/blog"/>
+    {% for category in site.categories %}
+        <category term ="{{ forloop.index }}" />
+    {% endfor %}
+    {% for post in site.posts %}
+        <entry>
+            <id>{{ site.url }}{{ post.id }}</id>
+            <title>{{ post.title | xml_escape }}</title>
+            <category>{{ post.category }}</category>
+            <updated>{{ post.date | date_to_xmlschema }}</updated>
+            {% if post.external_url %}
+                <link rel="alternate" href="{{ post.external_url }}"/>
+            {% else %}
+                <link rel="alternate" href="{{ site.url }}{{ post.url }}"/>
+            {% endif %}
+            <content type="html">{{ post.content | xml_escape }}</content>
+        </entry>
+    {% endfor %}
 </feed>
