@@ -27,11 +27,7 @@
     {% endfor %}
     {% for post in site.posts limit:20 %}
         <entry>
-            {% if post.guid %}
-                <id>{{ post.guid }}</id>
-            {% else %}
-                <id>{{ site.url }}{{ post.url }}</id>
-            {% endif %}
+            <id>{{ site.url }}{{ post.url }}</id>
             <title>{{ post.title | xml_escape }}</title>
             <category term="{{ post.category }}"/>
             <updated>{{ post.date | date_to_xmlschema }}</updated>

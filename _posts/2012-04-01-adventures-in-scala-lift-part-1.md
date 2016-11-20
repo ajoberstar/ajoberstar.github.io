@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Adventures in Scala/Lift Part 1
-guid: 5005ed49e4b0d534734f5630:5005f070e4b0ee36c463b555:5005f070e4b0ee36c463b595
 category: technical
 tags:
     - programming languages

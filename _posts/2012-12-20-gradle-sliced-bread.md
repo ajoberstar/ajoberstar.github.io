@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Gradle > Sliced Bread
-guid: 5005ed49e4b0d534734f5630:5005f070e4b0ee36c463b555:50d3beaae4b097d6748a8a00
 category: technical
 tags:
     - gradle

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Raspberry Pi as Server - DNS and DHCP
-guid: 5005ed49e4b0d534734f5630:5005f070e4b0ee36c463b555:50e0e196e4b03955129f68f6
 date: 2012-12-30 01:00:00
 category: technical
 tags:

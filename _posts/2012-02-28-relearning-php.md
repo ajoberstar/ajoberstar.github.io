@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Relearning PHP
-guid: 5005ed49e4b0d534734f5630:5005f070e4b0ee36c463b555:5005f070e4b0ee36c463b583
 category: technical
 tags:
     - php
@@ -9,7 +8,7 @@ tags:
 ---
 Very little of my programming life has been outside of the JVM world.  Java was the primary language at my college, and is the primary language at my workplace.  Recently, I've gotten into Groovy, which is a dynamic language for the JVM.  I dabbled a small amount in C++ and PHP, but didn't stick with them.
 
-I recently began collaborating with a friend on a website, so I've been trying to relearn PHP which is our common denominator.  I read through most of the manual on php.net, but needed something that gave a little more guidance.  I ended up reading [PHP Objects, Patterns and Practice](http://www.amazon.com/Objects-Patterns-Practice-Experts-Source/dp/143022925X/ref=sr_1_2?ie=UTF8&qid=1330477190&sr=8-2) which did a good job of showing how to apply design patterns in PHP.  I would very much recommend this book if you want to get beyond a understanding of PHP syntax.
+I recently began collaborating with a friend on a website, so I've been trying to relearn PHP which is our common denominator.  I read through most of the manual on php.net, but needed something that gave a little more
 
 In general, I have a bad view of PHP as an Object Oriented language.  This mainly stems from its beginnings as a simple scripting language and having objects tacked on once people started using it for more complex use cases.  PHP's OO capabilities just doesn't seem mature to me.  I've only been developing in PHP for about a week (with not a whole lot of code generated), but I loath it.  I'm sure a large factor is my background in Java, which makes many aspects of PHP sit funny with me.
 

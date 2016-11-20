@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Quick Gradle Tip - Setting Bintray Attributes for Gradle Plugins
-guid: 5005ed49e4b0d534734f5630:5005f070e4b0ee36c463b555:54289a90e4b0b8d209dc07e3
 category: technical
 tags:
     - gradle
