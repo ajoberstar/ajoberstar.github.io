@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Letter to Representatives - Fiscal Cliff
+guid: 5005ed49e4b0d534734f5630:5005f070e4b0ee36c463b555:50bbb4e1e4b012760adfd293
 category: political
 tags:
     - deficit

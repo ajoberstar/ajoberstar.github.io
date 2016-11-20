@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "7 Languages: Haskell"
+guid: 5005ed49e4b0d534734f5630:5005f070e4b0ee36c463b555:5005f070e4b0ee36c463b591
 category: technical
 tags:
     - haskell

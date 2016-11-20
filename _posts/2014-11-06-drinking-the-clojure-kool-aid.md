@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Drinking the Clojure Kool-Aid
+guid: 5005ed49e4b0d534734f5630:5005f070e4b0ee36c463b555:545c375ce4b06e0eec9c1701
 category: technical
 tags:
     - clojure

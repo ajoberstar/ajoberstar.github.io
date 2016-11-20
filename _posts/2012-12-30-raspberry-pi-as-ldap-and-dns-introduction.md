@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Raspberry Pi as LDAP and DNS - Introduction
+guid: 5005ed49e4b0d534734f5630:5005f070e4b0ee36c463b555:50e087fee4b0a05702aee752
 date: 2012-12-30 00:00:00
 category: technical
 tags:

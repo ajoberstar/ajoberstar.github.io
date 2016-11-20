@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "7 Languages: Clojure"
+guid: 5005ed49e4b0d534734f5630:5005f070e4b0ee36c463b555:5005f070e4b0ee36c463b58f
 date: 2012-03-18 01:00:00
 category: technical
 tags:
