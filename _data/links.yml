@@ -2,10 +2,10 @@
   url: /
 - text: About
   url: /about
-- text: Blog
-  url: /blog
+- text: Archive
+  url: /posts
 - text: Subscribe
-  url: /blog/feed.xml
+  url: /feed.xml
 - text: GitHub
   url: https://github.com/ajoberstar
 - text: Twitter
