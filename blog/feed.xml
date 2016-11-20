@@ -27,11 +27,11 @@
     {% endfor %}
     {% for post in site.posts %}
         <entry>
-            <% if post.guid %}
+            {% if post.guid %}
                 <id>{{ post.guid }}</id>
-            <% else %}
+            {% else %}
                 <id>{{ site.url }}{{ post.url }}</id>
-            <% endif %}
+            {% endif %}
             <title>{{ post.title | xml_escape }}</title>
             <category term="{{ post.category }}"/>
             <updated>{{ post.date | date_to_xmlschema }}</updated>
