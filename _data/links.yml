@@ -3,7 +3,7 @@
 - text: About
   url: /about
 - text: Archive
-  url: /posts
+  url: /archive
 - text: Subscribe
   url: /feed.xml
 - text: GitHub

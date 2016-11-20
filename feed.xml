@@ -2,7 +2,7 @@
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>{{ site.url }}/blog</id>
+    <id>{{ site.url }}</id>
     <title>Andrew Oberstar</title>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
     <author>
@@ -11,7 +11,7 @@
         <uri>http://www.andrewoberstar.com</uri>
     </author>
     <link rel="self" href="{{ site.url }}/feed.xml" />
-    <link rel="alternate" href="{{ site.url }}/blog"/>
+    <link rel="alternate" href="{{ site.url }}"/>
     {% assign categories = "" %}
     {% for post in site.posts %}
         {% if categories == "" %}
