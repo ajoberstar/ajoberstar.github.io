@@ -14,6 +14,9 @@
     <link rel="alternate" href="{{ site.url }}/blog"/>
     {% assign categories = "" %}
     {% for post in site.posts %}
+        {% if categories == "" %}
+            {% assign categories = post.category %}
+        {% endif %}
         {% unless categories contains post.category %}
             {% assign categories = categories | append:'|' | append: post.category %}
         {% endunless %}
