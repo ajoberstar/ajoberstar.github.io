@@ -12,7 +12,12 @@
     </author>
     <link rel="self" href="{{ site.url }}/blog/feed.xml" />
     <link rel="alternate" href="{{ site.url }}/blog"/>
-    {% for category in site.categories %}
+    {% assign categories = "" %}
+    {% for post in site.posts %}
+        {% assign categories = categories | append:'|' | append: post.category %}
+    {% endfor %}
+    {% assign categories = categories | split:'|' | sort %}
+    {% for category in categories %}
         <category term ="{{ forloop.index }}" />
     {% endfor %}
     {% for post in site.posts %}
