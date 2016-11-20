@@ -10,7 +10,7 @@
         <email>ajoberstar@gmail.com</email>
         <uri>http://www.andrewoberstar.com</uri>
     </author>
-    <link rel="self" href="{{ site.url }}/blog/feed.xml" />
+    <link rel="self" href="{{ site.url }}/feed.xml" />
     <link rel="alternate" href="{{ site.url }}/blog"/>
     {% assign categories = "" %}
     {% for post in site.posts %}
