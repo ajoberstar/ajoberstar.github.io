@@ -1,4 +1,7 @@
 ---
 layout: default
-title: Andrew Oberstar, Unoriginal Thoughts and Titles
+title: Andrew Oberstar
 ---
+{% for post in site.posts limit:3 %}
+    {% include post.html full_content=true post=post %}
+{% endfor %}
