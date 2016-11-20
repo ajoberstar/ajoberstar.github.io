@@ -14,11 +14,13 @@
     <link rel="alternate" href="{{ site.url }}/blog"/>
     {% assign categories = "" %}
     {% for post in site.posts %}
-        {% assign categories = categories | append:'|' | append: post.category %}
+        {% unless categories contains post.category %}
+            {% assign categories = categories | append:'|' | append: post.category %}
+        {% endunless %}
     {% endfor %}
     {% assign categories = categories | split:'|' | sort %}
     {% for category in categories %}
-        <category term ="{{ forloop.index }}" />
+        <category term ="{{ category }}" />
     {% endfor %}
     {% for post in site.posts %}
         <entry>
