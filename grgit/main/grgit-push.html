@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>grgit-push :: ajoberstar.org</title>
+    <link rel="canonical" href="https://ajoberstar.org/grgit/main/grgit-push.html">
+    <meta name="generator" content="Antora 3.0.3">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://ajoberstar.org">ajoberstar.org</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Projects</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../ajoberstar/index.html">ajoberstar</a>
+            <a class="navbar-item" href="index.html">grgit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="grgit" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">grgit</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Setup and Config</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-authentication.html">grgit-authentication</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-gradle.html">grgit-gradle</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Getting and Creating Projects</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-init.html">grgit-init</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-clone.html">grgit-clone</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-open.html">grgit-open</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Basic Snapshotting</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-add.html">grgit-add</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-status.html">grgit-status</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-commit.html">grgit-commit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-reset.html">grgit-reset</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-remove.html">grgit-remove</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Branching and Merging</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-branch.html">grgit-branch</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-checkout.html">grgit-checkout</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-merge.html">grgit-merge</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-tag.html">grgit-tag</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Sharing and Updating Projects</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-fetch.html">grgit-fetch</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-pull.html">grgit-pull</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="grgit-push.html">grgit-push</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-remote.html">grgit-remote</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inspection and Comparison</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-head.html">grgit-head</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-show.html">grgit-show</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-log.html">grgit-log</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-describe.html">grgit-describe</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-resolve.html">grgit-resolve</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-isAncestorOf.html">grgit-isAncestorOf</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Patching</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-apply.html">grgit-apply</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-revert.html">grgit-revert</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Administration</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-clean.html">grgit-clean</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Plumbing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-lsremote.html">grgit-lsremote</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">grgit</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../ajoberstar/index.html">ajoberstar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ajoberstar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">grgit</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../ajoberstar/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">grgit</a></li>
+    <li>Sharing and Updating Projects</li>
+    <li><a href="grgit-push.html">grgit-push</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/ajoberstar/grgit/edit/main/docs/modules/ROOT/pages/grgit-push.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">grgit-push</h1>
+<div class="sect1">
+<h2 id="_name"><a class="anchor" href="#_name"></a>Name</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>grgit-push - Update remote refs along with associated objects</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_synopsis"><a class="anchor" href="#_synopsis"></a>Synopsis</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">grgit.push()</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">grgit.push(remote: '&lt;name or uri&gt;', refsOrSpecs: [&lt;ref or refspec&gt;, ...],
+  all: &lt;boolean&gt;, tags: &lt;boolean&gt;, force: &lt;boolean&gt;, dryRun: &lt;boolean&gt;),
+  pushOptions: [&lt;string&gt;, ...]</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">grgit.push {
+  remote = '&lt;name or uri&gt;'
+  refsOrSpecs = [&lt;ref or refspec&gt;, ...]
+  all = &lt;boolean&gt;
+  tags = &lt;boolean&gt;
+  force = &lt;boolean&gt;
+  dryRun = &lt;boolean&gt;
+  pushOptions = [&lt;string&gt;, ...]
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Updates remote refs using local refs, while sending objects necessary to complete the given refs.</p>
+</div>
+<div class="paragraph">
+<p>When the <code>remote</code> is not specified, <code>branch.*.remote</code> configuration for the current branch is consulted to determine where to push. If the configuration is missing, it defaults to <code>origin</code>.</p>
+</div>
+<div class="paragraph">
+<p>When the <code>refsOrSpecs</code> or <code>all</code> or <code>tags</code> options are not specified, the command finds the default <code>&lt;refspec&gt;</code> by consulting <code>remote.*.push</code> configuration, and if it is not found, honors <code>push.default</code> configuration to decide what to push (See <a href="https://git-scm.com/docs/git-config">git-config</a> for the meaning of <code>push.default</code>).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_options"><a class="anchor" href="#_options"></a>Options</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">remote</dt>
+<dd>
+<p>(<code>String</code>, default <code>null</code>) The "remote" repository that is destination of a push operation. This parameter can be either a URL or the name of a remote.</p>
+</dd>
+<dt class="hdlist1">refsOrSpecs</dt>
+<dd>
+<p>(<code>List&lt;String&gt;</code>, default <code>[]</code>) Specify what destination ref to update with what source object. The format of a &lt;refspec&gt; parameter is an optional plus +, followed by the source object &lt;src&gt;, followed by a colon :, followed by the destination ref &lt;dst&gt;.</p>
+<div class="paragraph">
+<p>The &lt;src&gt; is often the name of the branch you would want to push, but it can be any arbitrary "SHA-1 expression", such as <code>master~4</code> or <code>HEAD</code> (see <a href="https://git-scm.com/docs/gitrevisions">gitrevisions</a>).</p>
+</div>
+<div class="paragraph">
+<p>The &lt;dst&gt; tells which ref on the remote side is updated with this push. Arbitrary expressions cannot be used here, an actual ref must be named. If <code>grgit.push(remote: '&lt;repositor&gt;')</code> without any <code>refsOrSpecs</code> argument is set to update some ref at the destination with &lt;src&gt; with <code>remote.&lt;repository&gt;.push</code> configuration variable, :&lt;dst&gt; part can be omitted—​such a push will update a ref that &lt;src&gt; normally updates without any &lt;refspec&gt; on the command line. Otherwise, missing :&lt;dst&gt; means to update the same ref as the &lt;src&gt;.</p>
+</div>
+<div class="paragraph">
+<p>The object referenced by &lt;src&gt; is used to update the &lt;dst&gt; reference on the remote side. By default this is only allowed if &lt;dst&gt; is not a tag (annotated or lightweight), and then only if it can fast-forward &lt;dst&gt;. By having the optional leading +, you can tell Git to update the &lt;dst&gt; ref even if it is not allowed by default (e.g., it is not a fast-forward.) This does not attempt to merge &lt;src&gt; into &lt;dst&gt;.</p>
+</div>
+<div class="paragraph">
+<p>Pushing an empty &lt;src&gt; allows you to delete the &lt;dst&gt; ref from the remote repository.</p>
+</div>
+<div class="paragraph">
+<p>The special refspec : (or +: to allow non-fast-forward updates) directs Git to push "matching" branches: for every branch that exists on the local side, the remote side is updated if a branch of the same name already exists on the remote side.</p>
+</div>
+</dd>
+<dt class="hdlist1">all</dt>
+<dd>
+<p>(<code>boolean</code>, default <code>false</code>) Push all branches (i.e. refs under <code>refs/heads/</code>); cannot be used with other <code>refsOrSpecs</code>.</p>
+</dd>
+<dt class="hdlist1">tags</dt>
+<dd>
+<p>(<code>boolean</code>, default <code>false</code>) All refs under refs/tags are pushed, in addition to refspecs explicitly listed in <code>refsOrSpecs</code>.</p>
+</dd>
+<dt class="hdlist1">force</dt>
+<dd>
+<p>(<code>boolean</code>, default <code>false</code>) Usually, the command refuses to update a remote ref that is not an ancestor of the local ref used to overwrite it. Note that <code>force</code> applies to all the refs that are pushed, hence using it with <code>push.default</code> set to <code>matching</code> or with multiple push destinations configured with <code>remote.*.push</code> may overwrite refs other than the current branch (including local refs that are strictly behind their remote counterpart). To force a push to only one branch, use a + in front of the refspec to push (e.g git push origin +master to force a push to the master branch). See the &lt;refspec&gt;&#8230;&#8203; section above for details.</p>
+</dd>
+<dt class="hdlist1">dryRun</dt>
+<dd>
+<p>(<code>boolean</code>, default <code>false</code>) Do everything except actually send the updates.</p>
+</dd>
+<dt class="hdlist1">pushOptions</dt>
+<dd>
+<p>(<code>List&lt;String&gt;</code>, default <code>[]</code>) Transmit the given string to the server, which passes them to the pre-receive as well as the post-receive hook. The given string must not contain a NUL or LF character. When multiple <code>pushOptions</code> are given, they are all sent to the other side in the order listed. When no <code>pushOptions</code> is given, the values of configuration variable <code>push.pushOption</code> are used instead.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_see_also"><a class="anchor" href="#_see_also"></a>See Also</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://git-scm.com/docs/git-push">git-push</a></p>
+</li>
+<li>
+<p><a href="grgit-fetch.html" class="xref page">grgit-fetch</a></p>
+</li>
+<li>
+<p><a href="grgit-pull.html" class="xref page">grgit-pull</a></p>
+</li>
+<li>
+<p><a href="grgit-authentication.html" class="xref page">grgit-authentication</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

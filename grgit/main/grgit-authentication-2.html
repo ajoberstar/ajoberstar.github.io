@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>grgit-authentication :: ajoberstar.org</title>
+    <link rel="canonical" href="https://ajoberstar.org/grgit/main/grgit-authentication-2.html">
+    <meta name="generator" content="Antora 3.0.3">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://ajoberstar.org">ajoberstar.org</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Projects</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../ajoberstar/index.html">ajoberstar</a>
+            <a class="navbar-item" href="index.html">grgit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="grgit" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">grgit</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Setup and Config</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-authentication.html">grgit-authentication</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-gradle.html">grgit-gradle</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Getting and Creating Projects</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-init.html">grgit-init</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-clone.html">grgit-clone</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-open.html">grgit-open</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Basic Snapshotting</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-add.html">grgit-add</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-status.html">grgit-status</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-commit.html">grgit-commit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-reset.html">grgit-reset</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-remove.html">grgit-remove</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Branching and Merging</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-branch.html">grgit-branch</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-checkout.html">grgit-checkout</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-merge.html">grgit-merge</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-tag.html">grgit-tag</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Sharing and Updating Projects</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-fetch.html">grgit-fetch</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-pull.html">grgit-pull</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-push.html">grgit-push</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-remote.html">grgit-remote</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inspection and Comparison</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-head.html">grgit-head</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-show.html">grgit-show</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-log.html">grgit-log</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-describe.html">grgit-describe</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-resolve.html">grgit-resolve</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-isAncestorOf.html">grgit-isAncestorOf</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Patching</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-apply.html">grgit-apply</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-revert.html">grgit-revert</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Administration</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-clean.html">grgit-clean</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Plumbing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-lsremote.html">grgit-lsremote</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">grgit</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../ajoberstar/index.html">ajoberstar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ajoberstar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">grgit</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../ajoberstar/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">grgit</a></li>
+    <li><a href="grgit-authentication-2.html">grgit-authentication</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/ajoberstar/grgit/edit/main/docs/modules/ROOT/pages/grgit-authentication-2.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">grgit-authentication</h1>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Grgit communicates with remote repositories in one of three ways:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>HTTP(S) protocol with basic auth credentials (i.e. username/password).</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Where possible, use of HTTPS urls is preferred over the SSH options. This has been far more reliable than JSch. The SSH support via directy commands is newer and still opt-in.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>SSH protocol using JSch (a Java implementation of the SSH protocol). This approach can use JSch Agent Proxy as a way to get SSH keys from ssh-agent or Pageant.</p>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+There have been numerous issues with JSch authentication. It may work for you, but you could run into issues from conflicting JNA libraries, host key authentication issues, algorithm negotiation. Additionally, the JSch Agent Proxy library hasn&#8217;t been maintained since 2014 (as of April 2018).
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>SSH protocol using <code>ssh</code> or <code>plink</code> directly. This approach should work as long as you can push/pull on your machine</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This is intended to replace JSch, but is new as of Grgit 2.2.0. If it proves to be reliable, it will be on by default in 3.0.0.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+This support must be explicitly enabled with the system property <code>org.ajoberstar.grgit.auth.command.allow=true</code>.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_options"><a class="anchor" href="#_options"></a>Options</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_authentication_method"><a class="anchor" href="#_authentication_method"></a>Authentication Method</h3>
+<div class="paragraph">
+<p>The following system properties can be set to configure which authentication options are available when performing a <em>transport</em> command. Generally, you shouldn&#8217;t need to modify any of these unless you are having an issue and need to bypass or force or particular method.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">org.ajoberstar.grgit.auth.force</dt>
+<dd>
+<p>(one of <code>hardcoded</code>, <code>interactive</code>, <code>sshagent</code>, <code>pageant</code>)</p>
+</dd>
+<dt class="hdlist1">org.ajoberstar.grgit.auth.hardcoded.allow</dt>
+<dd>
+<p>(<code>true</code> or <code>false</code>, default <code>true</code>)</p>
+</dd>
+<dt class="hdlist1">org.ajoberstar.grgit.auth.interactive.allow</dt>
+<dd>
+<p>(<code>true</code> or <code>false</code>, default <code>true</code>)</p>
+</dd>
+<dt class="hdlist1">org.ajoberstar.grgit.auth.sshagent.allow</dt>
+<dd>
+<p>(<code>true</code> or <code>false</code>, default <code>true</code>)</p>
+</dd>
+<dt class="hdlist1">org.ajoberstar.grgit.auth.pageant.allow</dt>
+<dd>
+<p>(<code>true</code> or <code>false</code>, default <code>true</code>)</p>
+</dd>
+<dt class="hdlist1">org.ajoberstar.grgit.auth.command.allow</dt>
+<dd>
+<p>(<code>true</code> or <code>false</code>, default <code>false</code>)</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>When credentials/input are needed, they will be selected in the following precedence, if available:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Hardcoded (i.e. username/password) credentials, if provided.</p>
+</li>
+<li>
+<p>Interactive credentials provided via a dialog prompt. This is only available in non-headless JVMs, and will only display if the input couldn&#8217;t be retrieved in another manner.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>For SSH URLs using JSch, a key may be used from one of the following sources:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>SSH key in a default location (e.g. <code>~/.ssh/id_rsa</code>)</p>
+</li>
+<li>
+<p>SSH key from a user-specified location</p>
+</li>
+<li>
+<p>Keys loaded into a running ssh-agent</p>
+</li>
+<li>
+<p>Keys loaded into a running Pageant</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>For SSH using <em>command</em> mode, any keys your <code>ssh</code> or <code>plink</code> can natively pick up by default will be used. This should include keys in default locations (e.g. <code>~/</code>) and any compatible SSH agent or OS keychain. If your key is password protected and not loaded in an agent, authentication will fail. Grgit cannot provide credentials to the external commands.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_hardcoded_credentials"><a class="anchor" href="#_hardcoded_credentials"></a>Hardcoded Credentials</h3>
+<div class="paragraph">
+<p>These are presented in precedence order (direct parameter in code, system properties, environment variables).</p>
+</div>
+<div class="sect3">
+<h4 id="_parameter_to_grgit_operations"><a class="anchor" href="#_parameter_to_grgit_operations"></a>Parameter to Grgit operations</h4>
+<div class="paragraph">
+<p>Some Grgit operations, such as <a href="grgit-clone.html" class="xref page">grgit-clone</a> allow you to provide credentials programmatically.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">import org.ajoberstar.grgit.Grgit
+import org.ajoberstar.grgit.Credentials
+
+def grgit = Grgit.clone(dir: '...', url: '...', credentials: new Credentials(username, password))</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_system_properties"><a class="anchor" href="#_system_properties"></a>System Properties</h4>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">org.ajoberstar.grgit.auth.username</dt>
+<dd>
+<p>Username to provide when basic authentication credentials are needed. Username can be specified without a password (e.g. using a GitHub auth token as the user and providing no password).</p>
+</dd>
+<dt class="hdlist1">org.ajoberstar.grgit.auth.password</dt>
+<dd>
+<p>Password to provide when basic authentication credentials are needed.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_environment_variables"><a class="anchor" href="#_environment_variables"></a>Environment Variables</h4>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">GRGIT_USER</dt>
+<dd>
+<p>Username to provide when basic authentication credentials are needed. Username can be specified without a password (e.g. using a GitHub auth token as the user and providing no password).</p>
+</dd>
+<dt class="hdlist1">GRGIT_PASS</dt>
+<dd>
+<p>Password to provide when basic authentication credentials are needed.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ssh_credentials"><a class="anchor" href="#_ssh_credentials"></a>SSH Credentials</h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+This is not used when <code>org.ajoberstar.grgit.auth.command.allow=true</code> is set.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Generally, these will be detected for you, whether they&#8217;re in a default location or provided from an agent. If you want to specify a specific SSH key (and passphrase), you can do so via system properties.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">org.ajoberstar.grgit.auth.ssh.private</dt>
+<dd>
+<p>Path to the SSH key to use</p>
+</dd>
+<dt class="hdlist1">org.ajoberstar.grgit.auth.ssh.passphrase</dt>
+<dd>
+<p>Passphrase to use the key, if any needed</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_customizing_the_jsch_session"><a class="anchor" href="#_customizing_the_jsch_session"></a>Customizing the JSch Session</h2>
+<div class="sectionbody">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+This is not used when <code>org.ajoberstar.grgit.auth.command.allow=true</code> is set.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>JGit uses JSch for it&#8217;s SSH layer. To customize this from it&#8217;s defaults, you can use the following system properties (see available keys/values in <a href="https://epaul.github.io/jsch-documentation/javadoc/com/jcraft/jsch/JSch.html#setConfig-java.util.Hashtable-">JSch&#8217;s docs</a>):</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">org.ajoberstar.grgit.auth.session.config.&lt;key&gt;</dt>
+<dd>
+<p>&lt;value&gt;</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>For example: <code>org.ajoberstar.grgit.auth.session.config.StrictHostKeyChecking=no</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_customizing_the_ssh_command_used"><a class="anchor" href="#_customizing_the_ssh_command_used"></a>Customizing the SSH command used</h2>
+<div class="sectionbody">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Requires the system property <code>org.ajoberstar.grgit.auth.command.allow=true</code> to be set.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If the <code>GIT_SSH</code> environment variable is set, that will be used. If not, Grgit will scan your <code>PATH</code> for an <code>ssh</code> (preferred) or <code>plink</code> command.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is a non-exhaustive list of examples of how to configure authentication in common scenarios.</p>
+</div>
+<div class="sect2">
+<h3 id="_using_a_github_auth_token_with_https_urls"><a class="anchor" href="#_using_a_github_auth_token_with_https_urls"></a>Using a GitHub auth token with HTTPS URLs</h3>
+<div class="paragraph">
+<p>Set the environment variable <code>GRGIT_USER</code> to your authentication token from GitHub.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_a_username_and_password_with_https_urls"><a class="anchor" href="#_using_a_username_and_password_with_https_urls"></a>Using a Username and Password with HTTPS URLs</h3>
+<div class="paragraph">
+<p>Set the system properties:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>groovy -Dorg.ajoberstar.grgit.auth.username=someone -Dorg.ajoberstar.grgit.auth.password=mysecretpassword myscript.groovy</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_a_specific_ssh_key"><a class="anchor" href="#_using_a_specific_ssh_key"></a>Using a specific SSH key</h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+This is not used when <code>org.ajoberstar.grgit.auth.command.allow=true</code> is set.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Set the system properties:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>groovy -Dorg.ajoberstar.grgit.auth.ssh.private=/my/secret/key -Dorg.ajoberstar.grgit.auth.ssh.passphrase=mysecretpassword myscript.groovy</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_ssh_agent"><a class="anchor" href="#_using_ssh_agent"></a>Using ssh-agent</h3>
+<div class="paragraph">
+<p>Make sure your ssh-agent is started and your key is loaded. Then just run your application or script.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_pageant"><a class="anchor" href="#_using_pageant"></a>Using Pageant</h3>
+<div class="paragraph">
+<p>Make sure your Pageant is started and your key is loaded. Then just run your application or script.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

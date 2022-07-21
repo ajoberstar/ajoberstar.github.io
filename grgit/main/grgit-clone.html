@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>grgit-clone :: ajoberstar.org</title>
+    <link rel="canonical" href="https://ajoberstar.org/grgit/main/grgit-clone.html">
+    <meta name="generator" content="Antora 3.0.3">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://ajoberstar.org">ajoberstar.org</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Projects</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../ajoberstar/index.html">ajoberstar</a>
+            <a class="navbar-item" href="index.html">grgit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="grgit" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">grgit</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Setup and Config</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-authentication.html">grgit-authentication</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-gradle.html">grgit-gradle</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Getting and Creating Projects</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-init.html">grgit-init</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="grgit-clone.html">grgit-clone</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-open.html">grgit-open</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Basic Snapshotting</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-add.html">grgit-add</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-status.html">grgit-status</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-commit.html">grgit-commit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-reset.html">grgit-reset</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-remove.html">grgit-remove</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Branching and Merging</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-branch.html">grgit-branch</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-checkout.html">grgit-checkout</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-merge.html">grgit-merge</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-tag.html">grgit-tag</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Sharing and Updating Projects</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-fetch.html">grgit-fetch</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-pull.html">grgit-pull</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-push.html">grgit-push</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-remote.html">grgit-remote</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inspection and Comparison</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-head.html">grgit-head</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-show.html">grgit-show</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-log.html">grgit-log</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-describe.html">grgit-describe</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-resolve.html">grgit-resolve</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-isAncestorOf.html">grgit-isAncestorOf</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Patching</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-apply.html">grgit-apply</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-revert.html">grgit-revert</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Administration</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-clean.html">grgit-clean</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Plumbing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-lsremote.html">grgit-lsremote</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">grgit</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../ajoberstar/index.html">ajoberstar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ajoberstar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">grgit</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../ajoberstar/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">grgit</a></li>
+    <li>Getting and Creating Projects</li>
+    <li><a href="grgit-clone.html">grgit-clone</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/ajoberstar/grgit/edit/main/docs/modules/ROOT/pages/grgit-clone.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">grgit-clone</h1>
+<div class="sect1">
+<h2 id="_name"><a class="anchor" href="#_name"></a>Name</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>grgit-clone - Clone a repository into a new directory</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_synopsis"><a class="anchor" href="#_synopsis"></a>Synopsis</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">grgit.clone(dir: &lt;path&gt;, uri: &lt;path or uri&gt;, remote: &lt;name&gt;, all: &lt;boolean&gt;,
+  bare: &lt;boolean&gt;, branches: &lt;full refs&gt;, checkout: &lt;boolean&gt;,
+  refToCheckout: &lt;name&gt;, credentials: &lt;credentials&gt;)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">grgit.clone {
+  dir = &lt;path&gt;
+  uri = &lt;path or uri&gt;
+  remote = &lt;name&gt;
+  all = &lt;boolean&gt;
+  bare = &lt;boolean&gt;
+  branches = &lt;full refs&gt;
+  checkout = &lt;boolean&gt;
+  refToCheckout = &lt;name&gt;
+  credentials = &lt;credentials&gt;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned repository, and creates and checks out an initial branch that is forked from the cloned repository’s currently active branch.</p>
+</div>
+<div class="paragraph">
+<p>After the clone, a plain <a href="grgit-fetch.html" class="xref page">grgit-fetch</a> without arguments will update all the remote-tracking branches, and a <a href="grgit-pull.html" class="xref page">grgit-pull</a> without arguments will in addition merge the remote master branch into the current master branch.</p>
+</div>
+<div class="paragraph">
+<p>This default configuration is achieved by creating references to the remote branch heads under <code>refs/remotes/origin</code> and by initializing <code>remote.origin.url</code> and <code>remote.origin.fetch</code> configuration variables.</p>
+</div>
+<div class="paragraph">
+<p>Returns a <a href="https://github.com/ajoberstar/grgit/blob/main/grgit-core/src/main/groovy/org/ajoberstar/grgit/Grgit.groovy">Grgit</a> instance.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_options"><a class="anchor" href="#_options"></a>Options</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">dir</dt>
+<dd>
+<p>(<code>Object</code>, default <code>null</code>) The directory the repository should be cloned into. Can be a <code>File</code>, <code>Path</code>, or <code>String</code>.</p>
+</dd>
+<dt class="hdlist1">uri</dt>
+<dd>
+<p>(<code>String</code>, default <code>null</code>) The URI to the repository to be cloned.</p>
+</dd>
+<dt class="hdlist1">remote</dt>
+<dd>
+<p>(<code>String</code>, default <code>origin</code>) Instead of using the remote name <code>origin</code> to keep track of the upstream repository, use <code>&lt;name&gt;</code>.</p>
+</dd>
+<dt class="hdlist1">all</dt>
+<dd>
+<p>(<code>boolean</code>, default <code>false</code>) Clone all branches.</p>
+</dd>
+<dt class="hdlist1">bare</dt>
+<dd>
+<p>(<code>boolean</code>, default <code>false</code>) Create a bare repository.</p>
+</dd>
+<dt class="hdlist1">branches</dt>
+<dd>
+<p>(<code>List&lt;String&gt;</code>, <code>[]</code>) Select full refs to use with <code>all = false</code>.</p>
+</dd>
+<dt class="hdlist1">checkout</dt>
+<dd>
+<p>(<code>boolean</code>, default <code>true</code>) Set to <code>false</code> to skip checking out a <code>HEAD</code>.</p>
+</dd>
+<dt class="hdlist1">refToCheckout</dt>
+<dd>
+<p>(<code>String</code>, default <code>null</code>) Instead of pointing the newly created <code>HEAD</code> to the branch pointed to by the cloned repository’s <code>HEAD</code>, point to <code>&lt;name&gt;</code> branch instead. In a non-bare repository, this is the branch that will be checked out. This can also take tags and detaches the <code>HEAD</code> at that commit in the resulting repository.</p>
+</dd>
+<dt class="hdlist1">credentials</dt>
+<dd>
+<p>(<code>Credentials</code>, default <code>null</code>) An instance of <a href="https://github.com/ajoberstar/grgit/blob/main/grgit-core/src/main/groovy/org/ajoberstar/grgit/Credentials.groovy">Credentials</a> containing username/password to be used in operations that require authentication. See <a href="grgit-authentication.html" class="xref page">grgit-authentication</a> for preferred ways to configure this.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_see_also"><a class="anchor" href="#_see_also"></a>See Also</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://git-scm.com/docs/git-clone">git-clone</a></p>
+</li>
+<li>
+<p><a href="grgit-init.html" class="xref page">grgit-init</a></p>
+</li>
+<li>
+<p><a href="grgit-open.html" class="xref page">grgit-open</a></p>
+</li>
+<li>
+<p><a href="grgit-authentication.html" class="xref page">grgit-authentication</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
