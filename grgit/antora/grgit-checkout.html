@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>grgit-checkout :: ajoberstar.org</title>
+    <link rel="canonical" href="https://ajoberstar.org/grgit/antora/grgit-checkout.html">
+    <meta name="generator" content="Antora 3.0.3">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://ajoberstar.org">ajoberstar.org</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Projects</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../../ajoberstar/index.html">ajoberstar</a>
+            <a class="navbar-item" href="index.html">grgit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="grgit" data-version="antora">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">grgit</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Setup and Config</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-authentication.html">grgit-authentication</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-gradle.html">grgit-gradle</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Getting and Creating Projects</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-init.html">grgit-init</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-clone.html">grgit-clone</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-open.html">grgit-open</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Basic Snapshotting</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-add.html">grgit-add</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-status.html">grgit-status</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-commit.html">grgit-commit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-reset.html">grgit-reset</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-remove.html">grgit-remove</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Branching and Merging</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-branch.html">grgit-branch</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="grgit-checkout.html">grgit-checkout</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-merge.html">grgit-merge</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-tag.html">grgit-tag</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Sharing and Updating Projects</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-fetch.html">grgit-fetch</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-pull.html">grgit-pull</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-push.html">grgit-push</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-remote.html">grgit-remote</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Inspection and Comparison</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-head.html">grgit-head</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-show.html">grgit-show</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-log.html">grgit-log</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-describe.html">grgit-describe</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-resolve.html">grgit-resolve</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-isAncestorOf.html">grgit-isAncestorOf</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Patching</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-apply.html">grgit-apply</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-revert.html">grgit-revert</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Administration</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-clean.html">grgit-clean</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Plumbing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="grgit-lsremote.html">grgit-lsremote</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">grgit</span>
+    <span class="version">antora</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../ajoberstar/index.html">ajoberstar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ajoberstar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">grgit</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">antora</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../ajoberstar/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">grgit</a></li>
+    <li>Branching and Merging</li>
+    <li><a href="grgit-checkout.html">grgit-checkout</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/ajoberstar/grgit/edit/antora/docs/modules/ROOT/pages/grgit-checkout.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">grgit-checkout</h1>
+<div class="sect1">
+<h2 id="_name"><a class="anchor" href="#_name"></a>Name</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>grgit-checkout - Switch branches</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_synopsis"><a class="anchor" href="#_synopsis"></a>Synopsis</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">grgit.checkout(branch: &lt;branch&gt;)
+grgit.checkout(branch: &lt;branch&gt;, createBranch: true, orphan: &lt;boolean&gt;, startPoint: &lt;startPoint&gt;)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">grgit.checkout {
+  branch = &lt;branch&gt;
+}
+
+grgit.checkout {
+  branch = &lt;branch&gt;
+  createBranch = true
+  orphan = &lt;boolean&gt;
+  startPoint = &lt;startPoint&gt;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Updates files in the working tree to match the version in the index or the specified tree. If no paths are given, git checkout will also update HEAD to set the specified branch as the current branch.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>grgit.checkout(branch: &lt;branch&gt;)</code></dt>
+<dd>
+<p>To prepare for working on <code>&lt;branch&gt;</code>, switch to it by updating the index and the files in the working tree, and by pointing <code>HEAD</code> at the branch. Local modifications to the files in the working tree are kept, so that they can be committed to the <code>&lt;branch&gt;</code>.</p>
+</dd>
+<dt class="hdlist1"><code>grgit.checkout(branch: &lt;new_branch&gt;, createBranch: true, startPoint: &lt;startPoint&gt;, orphan: &lt;boolean&gt;)</code></dt>
+<dd>
+<p>Causes a new branch to be created as if <a href="grgit-branch.html" class="xref page">grgit-branch</a> were called and then checked out.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_options"><a class="anchor" href="#_options"></a>Options</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">branch</dt>
+<dd>
+<p>(<code>Object</code>, default <code>null</code>) Name of new branch to create or branch to checkout; if it refers to a branch (i.e., a name that, when prepended with "refs/heads/", is a valid ref), then that branch is checked out. Otherwise, if it refers to a valid commit, your  HEAD becomes "detached" and you are no longer on any branch (see below for details). For a more complete list of acceptable inputs, see <a href="grgit-resolve.html" class="xref page">grgit-resolve</a> (specifically the <code>toBranchName</code> method).</p>
+</dd>
+<dt class="hdlist1">startPoint</dt>
+<dd>
+<p>(<code>Object</code>, default <code>null</code>) Start the new branch at this commit. For a more complete list of acceptable inputs, see <a href="grgit-resolve.html" class="xref page">grgit-resolve</a> (specifically the <code>toRevisionString</code> method).</p>
+</dd>
+<dt class="hdlist1">createBranch</dt>
+<dd>
+<p>(<code>boolean</code>, default <code>false</code>) Create a new branch named <code>&lt;branch&gt;</code> and start it at <code>&lt;startPoint&gt;</code>.</p>
+</dd>
+<dt class="hdlist1">orphan</dt>
+<dd>
+<p>(<code>boolean</code>, default <code>false</code>) Create a new orphan branch, named <code>branch</code>, started from <code>startPoint</code> and switch to it. The first commit made on this new branch will have no parents and it will be the root of a new history totally disconnected from all the other branches and commits.</p>
+<div class="paragraph">
+<p>The index and the working tree are adjusted as if you had previously run <code>grgit.checkout(branch: &lt;startPoint&gt;)</code>. This allows you to start a new history that records a set of paths similar to <code>startPoint</code> by easily running <code>grgit.commit(message: &lt;msg&gt;, all: true)</code>.</p>
+</div>
+<div class="paragraph">
+<p>This can be useful when you want to publish the tree from a commit without exposing its full history. You might want to do this to publish an open source branch of a project whose current tree is "clean", but whose full history contains proprietary or otherwise encumbered bits of code.</p>
+</div>
+<div class="paragraph">
+<p>If you want to start a disconnected history that records a set of paths that is totally different from the one of <code>startPoint</code>, then you should clear the index and the working tree right after creating the orphan branch by running <code>grgit.remove(patterns: ['.'])</code> from the top level of the working tree. Afterwards you will be ready to prepare your new files, repopulating the working tree, by copying them from elsewhere, extracting a tarball, etc.</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To checkout an existing branch.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">grgit.checkout(branch: 'existing-branch')
+grgit.checkout(branch: 'existing-branch', createBranch: false)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To checkout a new branch starting at, but not tracking, the current HEAD.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">grgit.checkout(branch: 'new-branch', createBranch: true)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To checkout a new branch starting at, but not tracking, a start point.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">grgit.checkout(branch: 'new-branch', startPoint: 'any-branch', createBranch: true)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To checkout a new orphan branch starting at, but not tracking, the current HEAD.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">grgit.checkout(branch: 'new-branch', orphan: true)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To checkout a new orphan branch starting at, but not tracking, a start point.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">grgit.checkout(branch: 'new-branch', startPoint: 'any-branch', orphan: true)</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_see_also"><a class="anchor" href="#_see_also"></a>See Also</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://git-scm.com/docs/git-checkout">git-checkout</a></p>
+</li>
+<li>
+<p><a href="grgit-reset.html" class="xref page">grgit-reset</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
