@@ -5,11 +5,11 @@ These are my open source projects.
 == Clojure Build Tools
 
 * link:https://clojurephant.dev[clojurephant] (link:https://github.com/clojurephant/clojurephant[GitHub])
-* jovial (link:https://github.com/ajoberstar/jovial[GitHub])
+* link:https://cljdoc.org/d/org.ajoberstar/jovial[jovial] (link:https://github.com/ajoberstar/jovial[GitHub])
 
 == Clojure Libraries
 
-* ike.cljj (link:https://github.com/ajoberstar/ike.cljj[GitHub])
+* link:https://cljdoc.org/d/org.ajoberstar/ike.cljj[ike.cljj] (link:https://github.com/ajoberstar/ike.cljj[GitHub])
 
 == Gradle and Git
 
