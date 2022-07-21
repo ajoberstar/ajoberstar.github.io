@@ -1,3 +1,14 @@
 = ajoberstar.org
 
 These are my open source projects.
+
+== Clojure Build Tools
+
+* link:https://clojurephant.dev[clojurephant] (link:https://github.com/clojurephant/clojurephant[GitHub])
+* jovial (link:https://github.com/ajoberstar/jovial[GitHub])
+
+== Gradle and Git
+
+* reckon (link:https://github.com/ajoberstar/reckon[GitHub])
+* gradle-git-publish (link:https://github.com/ajoberstar/gradle-git-publish[GitHub])
+* xref:grgit::index.adoc[] (link:https://github.com/ajoberstar/grgit[GitHub])
