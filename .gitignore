@@ -1,1 +1,5 @@
-_site/
+# Node
+node_modules/
+
+# Antora
+build/

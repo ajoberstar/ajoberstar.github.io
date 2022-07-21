@@ -1,0 +1,15 @@
+site:
+  title: ajoberstar.org
+  url: https://ajoberstar.org
+  start_page: ajoberstar::index.adoc
+content:
+  sources:
+    - url: .
+    - url: https://github.com/ajoberstar/grgit.git
+      branches: [antora]
+      start_path: docs/
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./supplemental_ui
