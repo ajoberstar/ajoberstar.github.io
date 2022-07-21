@@ -6,7 +6,7 @@ content:
   sources:
     - url: .
     - url: https://github.com/ajoberstar/grgit.git
-      branches: [antora]
+      branches: [main]
       start_path: docs/
 ui:
   bundle:
