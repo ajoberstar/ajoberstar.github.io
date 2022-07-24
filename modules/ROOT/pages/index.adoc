@@ -20,4 +20,4 @@ These are my open source projects.
 == PowerShell Modules
 
 * ArchitectureDecisionRecords (link:https://github.com/ajoberstar/ArchitectureDecisionRecords[GitHub])
-* PSGitDotfiles (link:https://github.com/ajoberstar/PSGitDotfiles[PSGitDotfiles])
+* PSGitDotfiles (link:https://github.com/ajoberstar/PSGitDotfiles[GitHub])
