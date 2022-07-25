@@ -11,11 +11,12 @@ These are my open source projects.
 
 * link:https://cljdoc.org/d/org.ajoberstar/ike.cljj[ike.cljj] (link:https://github.com/ajoberstar/ike.cljj[GitHub])
 
-== Gradle and Git
+== Gradle Plugins
 
 * reckon (link:https://github.com/ajoberstar/reckon[GitHub])
-* gradle-git-publish (link:https://github.com/ajoberstar/gradle-git-publish[GitHub])
 * xref:grgit::index.adoc[] (link:https://github.com/ajoberstar/grgit[GitHub])
+* gradle-git-publish (link:https://github.com/ajoberstar/gradle-git-publish[GitHub])
+* gradle-stutter (link:https://github.com/ajoberstar/gradle-stutter[GitHub])
 
 == PowerShell Modules
 
