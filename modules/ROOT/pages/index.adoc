@@ -9,7 +9,7 @@ These are my open source projects.
 
 == Clojure Libraries
 
-* link:https://cljdoc.org/d/org.ajoberstar/ike.cljj[ike.cljj] (link:https://github.com/ajoberstar/ike.cljj[GitHub])
+* link:https://cljdoc.org/d/org.ajoberstar/cljj[cljj] (link:https://github.com/ajoberstar/cljj[GitHub])
 
 == Gradle Plugins
 
